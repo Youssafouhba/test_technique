@@ -4,9 +4,9 @@ services:
     container_name: postgres
     restart: always
     environment:
-      POSTGRES_USER: test
-      POSTGRES_PASSWORD: AVNS_2s8LBE_oJIbedpG4lSx
-      POSTGRES_DB: test_technique
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
     ports:
       - 5433:5432
     volumes:
