@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:14.5
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: AVNS_2s8LBE_oJIbedpG4lSx
+      POSTGRES_DB: test_technique
+    ports:
+      - 5433:5432
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
