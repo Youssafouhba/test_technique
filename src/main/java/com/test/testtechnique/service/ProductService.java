@@ -2,7 +2,7 @@ package com.test.testtechnique.service;
 
 import com.test.testtechnique.dto.ProductDTO;
 import com.test.testtechnique.entity.Product;
-import com.test.testtechnique.exceptions.ResourceNotFoundException;
+import com.test.testtechnique.exception.ResourceNotFoundException;
 import com.test.testtechnique.mapper.ProductMapper;
 import com.test.testtechnique.repository.ProductRepository;
 import jakarta.transaction.Transactional;

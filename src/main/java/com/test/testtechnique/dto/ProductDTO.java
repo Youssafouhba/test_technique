@@ -12,6 +12,9 @@ public class ProductDTO {
     @NotBlank(message = "Name is required")
     private String name;
 
+    @NotBlank(message = "Image is required")
+    private String Image;
+
     @Positive(message = "Price must be positive")
     private Double price;
 
