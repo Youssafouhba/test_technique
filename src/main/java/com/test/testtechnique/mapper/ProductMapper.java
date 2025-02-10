@@ -4,7 +4,9 @@ import com.test.testtechnique.dto.ProductDTO;
 import com.test.testtechnique.entity.Product;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
-
+/**
+ * Mapper for Product
+ */
 @Mapper(componentModel = "spring")
 public interface ProductMapper {
     ProductDTO toDto(Product product);
